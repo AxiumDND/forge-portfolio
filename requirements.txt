@@ -1,0 +1,9 @@
+PyQt5
+yfinance
+pandas
+pandas-ta
+requests
+mplfinance
+matplotlib
+plyer
+reportlab

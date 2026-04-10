@@ -1,0 +1,12 @@
+{
+    "holdings": [
+        {
+            "ticker": "AAPL",
+            "name": "Apple Inc.",
+            "type": "stock",
+            "quantity": 10,
+            "avg_buy_price": 150.00,
+            "currency": "USD"
+        }
+    ]
+}
