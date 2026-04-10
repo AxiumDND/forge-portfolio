@@ -1,12 +1,27 @@
 {
-    "holdings": [
-        {
-            "ticker": "AAPL",
-            "name": "Apple Inc.",
-            "type": "stock",
-            "quantity": 10,
-            "avg_buy_price": 150.00,
-            "currency": "USD"
-        }
-    ]
+    "accounts": {
+        "Trading 212": [
+            {"ticker": "TSLA", "name": "Tesla Inc.", "type": "stock", "quantity": 174.80410175},
+            {"ticker": "GLXY", "name": "Galaxy Digital", "type": "stock", "quantity": 12.558492},
+            {"ticker": "CCJ", "name": "Cameco Corp.", "type": "stock", "quantity": 2.230827}
+        ],
+        "Revolut": [
+            {"ticker": "TSLA", "name": "Tesla Inc.", "type": "stock", "quantity": 1.17},
+            {"ticker": "MRVL", "name": "Marvell Technology", "type": "stock", "quantity": 1.51},
+            {"ticker": "MSTR", "name": "Strategy (MicroStrategy)", "type": "stock", "quantity": 0.72},
+            {"ticker": "PLTR", "name": "Palantir Technologies", "type": "stock", "quantity": 0.05},
+            {"ticker": "SI=F", "name": "Silver (oz)", "type": "commodity", "quantity": 0.0662}
+        ],
+        "InvestEngine": [
+            {"ticker": "SPXL.L", "name": "SPDR S&P 500 UCITS ETF", "type": "etf", "quantity": 2396.59869},
+            {"ticker": "DAGB.L", "name": "iShares Core DAX UCITS ETF", "type": "etf", "quantity": 158.126061},
+            {"ticker": "EMIM.L", "name": "iShares Core EM IMI UCITS ETF", "type": "etf", "quantity": 30.970605},
+            {"ticker": "VDPG.L", "name": "Vanguard FTSE Dev Asia Pac ex Jpn", "type": "etf", "quantity": 11.645998},
+            {"ticker": "CSJP.L", "name": "iShares Core MSCI Japan IMI", "type": "etf", "quantity": 1.925509}
+        ],
+        "InvestEngine Pension": [
+            {"ticker": "SPXL.L", "name": "SPDR S&P 500 UCITS ETF", "type": "etf", "quantity": 289.31126},
+            {"ticker": "DAGB.L", "name": "iShares Core DAX UCITS ETF", "type": "etf", "quantity": 41.847512}
+        ]
+    }
 }
