@@ -53,12 +53,12 @@ class ChartPanel(QWidget):
         # Header row: ticker name + signal badge
         header_row = QHBoxLayout()
         self.ticker_label = QLabel("Click a holding to view chart")
-        self.ticker_label.setStyleSheet("font-size: 16px; font-weight: bold; color: #cdd6f4;")
+        self.ticker_label.setStyleSheet("font-size: 22px; font-weight: bold; color: #cdd6f4;")
         header_row.addWidget(self.ticker_label)
 
         self.signal_badge = QLabel("")
         self.signal_badge.setFixedHeight(24)
-        self.signal_badge.setStyleSheet("font-size: 12px; font-weight: bold; padding: 2px 10px; border-radius: 4px;")
+        self.signal_badge.setStyleSheet("font-size: 16px; font-weight: bold; padding: 4px 14px; border-radius: 4px;")
         self.signal_badge.hide()
         header_row.addWidget(self.signal_badge)
         header_row.addStretch()
@@ -72,7 +72,7 @@ class ChartPanel(QWidget):
 
         # Info bar: RSI, MACD values
         self.info_label = QLabel("")
-        self.info_label.setStyleSheet("font-size: 11px; color: #a6adc8; padding: 4px 0;")
+        self.info_label.setStyleSheet("font-size: 15px; color: #a6adc8; padding: 4px 0;")
         layout.addWidget(self.info_label)
 
     def update_chart(self, ticker, df, indicators):
@@ -84,7 +84,7 @@ class ChartPanel(QWidget):
         fg, bg = SIGNAL_COLOURS.get(signal, ("#cdd6f4", "#1e1e2e"))
         self.signal_badge.setText(f"  {signal}  ")
         self.signal_badge.setStyleSheet(
-            f"font-size: 12px; font-weight: bold; padding: 2px 10px; "
+            f"font-size: 16px; font-weight: bold; padding: 4px 14px; "
             f"border-radius: 4px; background-color: {fg}; color: {bg};"
         )
         self.signal_badge.show()
